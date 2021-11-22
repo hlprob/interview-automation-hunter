@@ -11,6 +11,7 @@ class CreditCardPaymentTest(unittest.TestCase):
         self.driver = webdriver.Chrome()
 
     ## Payment form data population
+    ## If I was writing multiple tests might have included a separate page.py file for defining elements variables to shorten up the 'test'.py file
     def test_cc_payment_submission(self):
         driver = self.driver
         driver.get("https://staging.autobooks.co/pay/autobook-s")
