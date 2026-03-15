@@ -22,7 +22,7 @@ describe('Authentication', () => {
   });
 
   it('should log out successfully', () => {
-    // TODO: update selectors/test IDs
+    // TODO: update selectors
     loginPage.login('test@example.com', 'password123');
     loginPage.logout();
 
