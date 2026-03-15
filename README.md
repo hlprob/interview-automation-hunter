@@ -44,7 +44,7 @@ This skeleton is ready to run once you swap in your application's real values:
 1. Update `baseUrl` in `cypress.config.ts` to point to your application
 2. Update `cy.visit()` paths in the spec files to match your real routes
 3. Replace `data-cy` selectors in the locator files with your actual element selectors
-4. Implement page object methods in the page files
+4. Add page objects for additional pages
 5. Fill in the `TODO` sections in the spec files with your test logic
 6. Update `testData/index.ts` with your real static test data
 7. Use `fixtures/paymentData.json` for data that needs to be shared between tests

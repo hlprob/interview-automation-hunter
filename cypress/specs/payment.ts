@@ -36,7 +36,8 @@ describe('Payment', () => {
   });
 
   it('should submit an ACH payment successfully', () => {
-    // Read payerName written during CC test
+    // cy.fixture is used here (vs cy.readFile above) to demonstrate both Cypress fixture
+    // access patterns: cy.readFile/cy.writeFile for write operations, cy.fixture for reads.
     cy.fixture('paymentData').then((data) => {
       cy.get(paymentLocators.typeAch).click();
       cy.get(paymentLocators.payerName).type(data.payerName);
