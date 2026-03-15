@@ -20,4 +20,13 @@ describe('Login', () => {
     // TODO: assert error message
     loginPage.getErrorMessage().should('be.visible');
   });
+
+  it('should log out successfully', () => {
+    // TODO: update selectors to match the login form
+    loginPage.login('test@example.com', 'password123');
+    loginPage.logout();
+
+    // TODO: assert successful logout (e.g. redirect back to login)
+    cy.url().should('include', '/login');
+  });
 });

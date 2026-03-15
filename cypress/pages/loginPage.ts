@@ -11,6 +11,10 @@ export class LoginPage {
     cy.get(locators.loginBtn).click();
   }
 
+  logout() {
+    cy.get(locators.logoutBtn).click();
+  }
+
   getErrorMessage() {
     return cy.get(locators.errorMessage);
   }
