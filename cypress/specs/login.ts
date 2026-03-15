@@ -26,7 +26,10 @@ describe('Login', () => {
     loginPage.login('test@example.com', 'password123');
     loginPage.logout();
 
-    // TODO: assert successful logout (e.g. redirect back to login)
-    cy.url().should('include', '/login');
+    // TODO: assert logout page URL
+    cy.url().should('include', '/logout');
+
+    // TODO: assert return to login button is visible
+    loginPage.getReturnToLoginBtn().should('be.visible');
   });
 });
