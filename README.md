@@ -13,6 +13,7 @@ cypress/
     loginPage.ts          # Login page object
   locators/
     loginLocators.ts      # Login element selectors
+    paymentLocators.ts    # Payment element selectors
   fixtures/
     paymentData.json      # Dynamic fixture data (written/read between tests)
     generated/            # Gitignored — for data written during test runs.

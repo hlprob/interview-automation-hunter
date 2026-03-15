@@ -6,13 +6,13 @@ export class LoginPage {
   }
 
   login(email: string, password: string) {
-    cy.get(locators.login.emailInput).type(email);
-    cy.get(locators.login.passwordInput).type(password);
-    cy.get(locators.login.loginBtn).click();
+    cy.get(locators.emailInput).type(email);
+    cy.get(locators.passwordInput).type(password);
+    cy.get(locators.loginBtn).click();
   }
 
   getErrorMessage() {
-    return cy.get(locators.login.errorMessage);
+    return cy.get(locators.errorMessage);
   }
 }
 
