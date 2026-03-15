@@ -16,4 +16,5 @@ npm-debug.log*
 # Cypress generated output
 cypress/screenshots/
 cypress/videos/
-cypress/fixtures/generated/
+cypress/fixtures/generated/*
+!cypress/fixtures/generated/.gitkeep

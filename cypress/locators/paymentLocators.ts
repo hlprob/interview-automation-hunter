@@ -1,4 +1,4 @@
-export const locators = {
+export const paymentLocators = {
   typeCc: '[data-cy="payment-type-cc"]',
   typeAch: '[data-cy="payment-type-ach"]',
   payerName: '[data-cy="payer-name"]',

@@ -1,4 +1,4 @@
-export const locators = {
+export const loginLocators = {
   emailInput: '[data-cy="email"]',
   passwordInput: '[data-cy="password"]',
   loginBtn: '[data-cy="login-btn"]',

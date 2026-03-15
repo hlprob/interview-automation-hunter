@@ -1,4 +1,4 @@
-import { locators } from '../locators/loginLocators';
+import { loginLocators } from '../locators/loginLocators';
 
 export class LoginPage {
   visit() {
@@ -6,21 +6,21 @@ export class LoginPage {
   }
 
   login(email: string, password: string) {
-    cy.get(locators.emailInput).type(email);
-    cy.get(locators.passwordInput).type(password);
-    cy.get(locators.loginBtn).click();
+    cy.get(loginLocators.emailInput).type(email);
+    cy.get(loginLocators.passwordInput).type(password);
+    cy.get(loginLocators.loginBtn).click();
   }
 
   logout() {
-    cy.get(locators.logoutBtn).click();
+    cy.get(loginLocators.logoutBtn).click();
   }
 
   getReturnToLoginBtn() {
-    return cy.get(locators.returnToLoginBtn);
+    return cy.get(loginLocators.returnToLoginBtn);
   }
 
   getErrorMessage() {
-    return cy.get(locators.errorMessage);
+    return cy.get(loginLocators.errorMessage);
   }
 }
 

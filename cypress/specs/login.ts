@@ -1,6 +1,6 @@
 import { loginPage } from '../pages/loginPage';
 
-describe('Login', () => {
+describe('Authentication', () => {
   beforeEach(() => {
     loginPage.visit();
   });
