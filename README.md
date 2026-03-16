@@ -52,3 +52,7 @@ This skeleton is ready to run once you swap in your application's real values:
 ## Auth State
 
 Once your tests require authenticated pages, use [`cy.session()`](https://docs.cypress.io/api/commands/session) to cache and restore login state between tests — avoiding a full UI login in every test that needs an authenticated user.
+
+## Network Interception
+
+Use [`cy.intercept()`](https://docs.cypress.io/api/commands/intercept) to stub, spy on, or modify HTTP requests during tests — useful for controlling API responses, simulating error states, or testing loading behavior without a real backend.
